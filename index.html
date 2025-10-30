@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detonamos Las Consolas</title>
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"/>
+  
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HERO -->
+  <header>
+    <h1 id="hero-title">Detonamos las consolas</h1>
+    <p id="hero-subtitle">Produciendo música que vibra con el alma</p>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" data-aos="fade-up">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un productor musical especializado en géneros urbanos. Con
+      experiencia en mezcla, masterización y producción, me dedico a crear
+      sonidos únicos que conectan con cada oyente. He trabajado con artistas
+      emergentes y proyectos independientes, siempre buscando un resultado
+      profesional.
+    </p>
+  </section>
+
+  <!-- MUSIC -->
+  <section id="music" data-aos="zoom-in">
+    <h2>Proyectos</h2>
+    <div class="tracks">
+      <div class="track" data-aos="fade-right">
+        <iframe
+          src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <p>Tema 1 - 2024</p>
+      </div>
+      <div class="track" data-aos="fade-left">
+        <iframe
+          src="https://open.spotify.com/embed/track/0c27qjzqEgMLMnWTl5bCU8?utm_source=generator"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <p>Tema 2 - 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" data-aos="fade-up">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service" data-aos="flip-left">🎛️ Producción de Beats</div>
+      <div class="service" data-aos="flip-up">🎚️ Mezcla & Master</div>
+      <div class="service" data-aos="flip-right">🎼 Composición a medida</div>
+      <div class="service" data-aos="flip-down">🎤 Grabación en estudio</div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" data-aos="fade-up">
+    <h2>Galería</h2>
+    <div class="gallery-grid">
+      <!-- Imágenes -->
+      <div class="media-item" data-aos="fade-up">
+        <img src="https://picsum.photos/id/1015/600/400" alt="Proyecto 1" />
+      </div>
+      <div class="media-item large" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://picsum.photos/id/1018/800/500" alt="Proyecto 2" />
+      </div>
+      <div class="media-item tall" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://picsum.photos/id/1022/400/600" alt="Proyecto 3" />
+      </div>
+      <div class="media-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://picsum.photos/id/1024/500/300" alt="Proyecto 4" />
+      </div>
+      <div class="media-item large" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://picsum.photos/id/1025/700/400" alt="Proyecto 5" />
+      </div>
+      <!-- Videos -->
+      <div class="media-item video large" data-aos="fade-up" data-aos-delay="500">
+        <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+      </div>
+      <div class="media-item video tall" data-aos="fade-up" data-aos-delay="600">
+        <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contacto</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+      <input type="hidden" name="access_key" value="6d7a443a-da05-44b5-93ec-e35c49cd60d4">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo" required />
+      <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+      <p id="form-status" style="margin-top:10px; font-size:0.9rem;"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/detonamoslasconsolas?igsh=MWg4Mmt4NmR3a2JvMw==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/5493492250312?text=Hola%20quiero%20crear%20musica" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p>© 2025 MMSoft - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
