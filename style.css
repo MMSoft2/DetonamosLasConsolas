@@ -241,4 +241,52 @@
       grid-row: span 1;
     }
   }
+
+  /* Imagen sección About */
+.about-photo {
+  display: block;
+  margin: 0 auto 25px auto; /* centrar + espacio inferior */
+  width: 180px;             /* ajustá a gusto */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;       /* la deja circular */
+  box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
+}
+
   
+
+/* ===== NUEVO: LATEST RELEASE ===== */
+.large-video-track {
+  /* Copiando estilos de .track */
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 0, 204, 0.2);
+  transition: transform 0.3s ease;
+
+  /* Hacemos que ocupe más ancho, pero no todo */
+  max-width: 800px;
+  margin: 0 auto; /* Centrarlo */
+}
+
+.large-video-track:hover {
+  transform: translateY(-8px);
+}
+
+/* Wrapper responsivo para video 16:9 */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* Coincidir con el border-radius del iframe original */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

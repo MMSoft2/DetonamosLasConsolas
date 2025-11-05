@@ -4,8 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detonamos Las Consolas</title>
+  
+  
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/5968/5968705.png"/>
   
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <!-- Font Awesome -->
@@ -21,8 +25,10 @@
   </header>
 
   <!-- ABOUT -->
+  
   <section id="about" data-aos="fade-up">
     <h2>Sobre mí</h2>
+    <img src="FotoSanti.jpg" alt="Foto de Santi" class="about-photo" />
     <p>
       Soy un productor musical especializado en géneros urbanos. Con
       experiencia en mezcla, masterización y producción, me dedico a crear
@@ -32,28 +38,97 @@
     </p>
   </section>
 
-  <!-- MUSIC -->
-  <section id="music" data-aos="zoom-in">
-    <h2>Proyectos</h2>
-    <div class="tracks">
-      <div class="track" data-aos="fade-right">
-        <iframe
-          src="https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-        <p>Tema 1 - 2024</p>
-      </div>
-      <div class="track" data-aos="fade-left">
-        <iframe
-          src="https://open.spotify.com/embed/track/0c27qjzqEgMLMnWTl5bCU8?utm_source=generator"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-        <p>Tema 2 - 2025</p>
-      </div>
+
+  <!-- ===== NUEVA SECCIÓN "ÚLTIMO LANZAMIENTO" ===== -->
+<section id="latest-release" data-aos="fade-up">
+  <h2>Último Lanzamiento</h2>
+  <!-- Contenedor que imita la estética de .track pero es más grande -->
+  <div class="large-video-track" data-aos="zoom-in">
+    <!-- Wrapper para aspect-ratio 16:9 -->
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/ID_DE_TU_VIDEO_YOUTUBE"
+        title="Último Lanzamiento"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
-  </section>
+  </div>
+</section>
+
+  <!-- PROYECTS -->
+  <section id="music" data-aos="zoom-in">
+  <h2>Proyectos</h2>
+  <div class="tracks">
+
+    <div class="track" data-aos="fade-right">
+      <iframe 
+        src="https://www.youtube.com/embed/GQX_C4DnyYU" 
+        title="Descripción del video 1" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 1 - 2024</p>
+    </div>
+
+    <div class="track" data-aos="fade-left">
+      <iframe 
+        src="https://www.youtube.com/embed/eV8pDFBI0Ew" 
+        title="Descripción del video 2" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 2 - 2025</p>
+    </div>
+
+    <div class="track" data-aos="fade-right">
+      <iframe 
+        src="https://www.youtube.com/embed/t7f7KssU0dc" 
+        title="Descripción del video 3" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 3 - 2025</p>
+    </div>
+
+    <div class="track" data-aos="fade-left">
+      <iframe 
+        src="https://www.youtube.com/embed/wII81A2QzCY" 
+        title="Descripción del video 4" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 4 - 2025</p>
+    </div>
+
+    <div class="track" data-aos="fade-left">
+      <iframe 
+        src="https://www.youtube.com/embed/rczH5Eba4sk" 
+        title="Descripción del video 2" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 5 - 2025</p>
+    </div>
+    
+    <div class="track" data-aos="fade-right">
+      <iframe 
+        src="https://www.youtube.com/embed/GsmeXbR58Z0" 
+        title="Descripción del video 3" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Tema 6 - 2025</p>
+    </div>
+  </div>
+</section>
 
   <!-- SERVICES -->
   <section id="services" data-aos="fade-up">
@@ -72,27 +147,28 @@
     <div class="gallery-grid">
       <!-- Imágenes -->
       <div class="media-item" data-aos="fade-up">
-        <img src="https://picsum.photos/id/1015/600/400" alt="Proyecto 1" />
+        <img src="SantiGaleria.jpg"  alt="Proyecto 1" />
       </div>
       <div class="media-item large" data-aos="fade-up" data-aos-delay="100">
-        <img src="https://picsum.photos/id/1018/800/500" alt="Proyecto 2" />
+        <img src="JaviWan.jpg" alt="Proyecto 2" />
       </div>
       <div class="media-item tall" data-aos="fade-up" data-aos-delay="200">
-        <img src="https://picsum.photos/id/1022/400/600" alt="Proyecto 3" />
+        <img src="Santitres.jpg" alt="Proyecto 3" />
       </div>
       <div class="media-item" data-aos="fade-up" data-aos-delay="300">
         <img src="https://picsum.photos/id/1024/500/300" alt="Proyecto 4" />
       </div>
       <div class="media-item large" data-aos="fade-up" data-aos-delay="400">
-        <img src="https://picsum.photos/id/1025/700/400" alt="Proyecto 5" />
+        <img src="javiwan2.jpg" alt="Proyecto 5" />
       </div>
-      <!-- Videos -->
+      <!-- Videos 
       <div class="media-item video large" data-aos="fade-up" data-aos-delay="500">
         <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
       </div>
       <div class="media-item video tall" data-aos="fade-up" data-aos-delay="600">
         <video src="https://www.w3schools.com/html/movie.mp4" controls></video>
       </div>
+      -->
     </div>
   </section>
 
