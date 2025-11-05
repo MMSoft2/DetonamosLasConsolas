@@ -15,49 +15,60 @@
     text-decoration: none;
   }
   
-  /* ===== HERO ===== */
+ /* ===== HERO (CORREGIDO) ===== */
+
 #hero-title {
   font-family: 'Beau Rivage', cursive;
   font-weight: 400;
 }
-  header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #111, #222);
-    position: relative;
-    overflow: hidden;
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #111, #222);
+  position: relative;
+  overflow: hidden;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #ff00cc, #3333ff, #ffcc00, #ff00cc);
+  animation: rotate 12s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
   }
-  header::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: conic-gradient(from 0deg, #ff00cc, #3333ff, #ffcc00, #ff00cc);
-    animation: rotate 12s linear infinite;
-    z-index: 0;
-    opacity: 0.2;
-  }
-  @keyframes rotate {
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  header h1 {
-    font-size: 5rem;
-    z-index: 1;
-  }
-  header p {
-    font-size: 1.2rem;
-    margin-top: 15px;
-    z-index: 1;
-    opacity: 0.8;
-  }
+}
+header h1 {
+  font-size: 5rem;
+  z-index: 1;
+}
+
+header p {
+  font-size: 1.2rem;
+  z-index: 1;
+  opacity: 0.8;
+  font-family: "Poppins", sans-serif; 
+}
+
+#hero-pretitle {
+  margin-bottom: 15px;
+}
+
+#hero-subtitle {
+  margin-top: 15px; 
+}
   
   /* ===== SECTIONS ===== */
   section {
