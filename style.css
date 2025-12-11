@@ -21,7 +21,18 @@
   font-family: 'Beau Rivage', cursive;
   font-weight: 400;
 }
-
+#hero-pretitle {
+  margin-bottom: 15px;
+  font-family: 'Beau Rivage', cursive; /* Misma fuente que el titulo */
+  font-size: 2.5rem; /* Aumentar el tamaño porque esta letra es fina */
+  line-height: 1;    
+} 
+#hero-subtitle {
+  margin-top: 15px; 
+  font-family: 'Beau Rivage', cursive;
+  font-size: 2.5rem;
+  line-height: 1;
+} 
 header {
   height: 100vh;
   display: flex;
@@ -62,18 +73,6 @@ header p {
   font-family: "Poppins", sans-serif; 
 }
 
-#hero-pretitle {
-  margin-bottom: 15px;
-  font-family: 'Beau Rivage', cursive; /* Misma fuente que el titulo */
-  font-size: 2.5rem; /* Aumentar el tamaño porque esta letra es fina */
-  line-height: 1;    
-
-#hero-subtitle {
-  margin-top: 15px; 
-  font-family: 'Beau Rivage', cursive;
-  font-size: 2.5rem;
-  line-height: 1;
-} 
   /* ===== SECTIONS ===== */
   section {
     padding: 80px 20px;
