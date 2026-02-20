@@ -17,7 +17,7 @@
   
  /* ===== HERO (CORREGIDO) ===== */
 
-#hero-title {
+.hero-title {
   font-family: 'Beau Rivage', cursive;
   font-weight: 400;
 }
@@ -307,4 +307,11 @@ header p {
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
 }
