@@ -264,8 +264,8 @@ header p {
 .about-photo {
   display: block;
   margin: 0 auto 25px auto; /* centrar + espacio inferior */
-  width: 180px;             /* ajustá a gusto */
-  height: 180px;
+  width: 200px;             /* ajustá a gusto */
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;       /* la deja circular */
   box-shadow: 0 0 15px rgba(255, 0, 204, 0.3);
